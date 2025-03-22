@@ -1,0 +1,14 @@
+﻿@model Activity
+
+<div class="text-danger" asp-validation-summary="ModelOnly"></div>
+<form method="post">
+    <label asp-for="Name">Name: </label>
+    <input asp-for="Name" />
+    <span asp-validation-for="Name" class="text-danger"></span>
+
+    <label asp-for="Date">Date: </label>
+    <input asp-for="Date" />
+    <span asp-validation-for="Date" class="text-danger"></span>
+
+    <input type="submit" />
+</form>

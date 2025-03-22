@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Activity>
+
+<table class="table table-striped">
+    <tr class="table-secondary">
+        <th>Id</th>
+        <th>Name</th>
+        <th>Date</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr class="table-light">
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.Date</td>
+        </tr>
+    }
+</table>
